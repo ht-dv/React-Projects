@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+.person-card {
+  display: inline-block;
+  border: 1px solid rgb(179, 173, 173);
+  border-radius: 10px;
+  width: 200px;
+}
+
+.person-bg {
+  /**background-image burda koyamiyoruz, propsla cekecegimiz icin kod isi olmaz burda dinamik olmasini istiyorsak. O sebeple inline-style ile gidip Profile dosyasi icinde bu class'a style atadik*/
+  height: 10rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+}
+.transparent {
+  /**rgba, rgb'den farkli olarak opacity deger veriyor*/
+  background-color: rgba(255, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.content {
+  padding: 0 1rem 0 1rem;
+  text-align: center;
+  position: relative;
+  top: -75px;
+  z-index: 11;
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+.content h3 {
+  font-family: Shadows Into Light;
+  margin: 0;
+  margin-top: 1rem;
+}
+.content h6 {
+  font-family: Shadows Into Light;
+  color: gray;
+  margin: 0;
+}
+
+.stats {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.stats span {
+  display: block; /**inline elemani blcok yaparsak alta gecer*/
+  font-size: 0.8rem;
+  font-family: Shadows Into Light;
+}
+.stats div {
+  font-size: 1.5rem;
+  font-family: Shadows Into Light;
+}

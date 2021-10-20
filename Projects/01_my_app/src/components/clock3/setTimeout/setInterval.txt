@@ -1,0 +1,7 @@
+setTimeout(() => {
+    console.log("Merhaba");
+  }, 1000); //* setTimeout() icindeki kodu, parametrede belirttigimiz sure kadar geciktirip 1 kez calistirir, burada 1000 ms yani 1 sn
+
+  setInterval(() => {
+    console.log("Merhaba");
+  }, 10000) //* setInterval ile method icindeki kodlar 10 saniyede bir surekli calisacak

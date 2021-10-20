@@ -1,0 +1,24 @@
+@font-face {
+  font-family: DS-DIGITAL; /** Bu ismi biz verdik*/
+  src: url("DS-DIGI.TTF"); /**Dosyamızın adi*/
+}
+
+.clock-container {
+  font-family: DS-DIGITAL;
+  display: flex; /**yan yana getirdi child divleri*/
+  background-color: black;
+  color: chartreuse;
+  padding: 0.5rem;
+  align-items: center; /**flex yaptigimizda dikeyde hizalamak icin align-items*/
+  justify-content: center; /**flex yaptigimizda yatayda hizalamak icin justify-content*/
+}
+.clock {
+  font-size: 4rem;
+  padding-right: 1rem;
+}
+.date {
+  font-size: 2rem;
+}
+.day {
+  font-size: 1.4rem;
+}
